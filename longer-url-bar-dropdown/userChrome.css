@@ -1,0 +1,10 @@
+/* fixes zen only showing 5 results, as per
+https://github.com/zen-browser/desktop/issues/10580#issuecomment-3704051682 */
+
+#urlbar-results {
+    max-height: 80dvh !important;
+}
+
+#urlbar[open][zen-floating-urlbar="true"] {
+	top: 5dvh !important;
+}
